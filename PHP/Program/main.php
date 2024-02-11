@@ -11,7 +11,7 @@ require('Anggota.php'); //import file
 echo '<link rel="stylesheet" href="style.css">';
 
 //array
-$daftar = [];
+$daftar = array();;
 
 //Menambahkan data
  $dpr1 = new Anggota('111', 'RIfky', 'IT', 'PKS', 'Foto Profil/PP1.jpg');
@@ -25,7 +25,7 @@ $daftar = [];
 
 //menampilkan list
  echo "<h1 style='text-align: center;'>Daftar Anggota DPR Republik Indonesia</h1>";
- echo '<table id = "tabel">';
+ echo "<table id = 'tabel'>";
     echo "<tr>";
     echo "<th>ID</th>";
     echo "<th>Nama</th>";
@@ -62,7 +62,7 @@ $daftar = [];
     //setelah proses pengubahan, tampilkan kembali list nya
     echo "<h4 style='text-align: center;'>Data Berhasil Diubah</h4>";
     echo "<h1 style='text-align: center;'>Daftar Anggota DPR Republik Indonesia</h1>";
-    echo '<table id = "tabel">';
+    echo "<table id = 'tabel'>";
         echo "<tr>";
         echo "<th>ID</th>";
         echo "<th>Nama</th>";
@@ -86,16 +86,16 @@ $daftar = [];
 
     /*Proses Penghapusan data*/
     $hapus_id = "113";
-    foreach ($daftar as $key => $wakil) {
+    foreach ($daftar as $x => $wakil) {
         if($wakil->getId() == $hapus_id){
-            unset($daftar[$key]);
+            unset($daftar[$x]);
         }
     }
 
     //setelahproses penghapusan data, tampilkan kembali listnya
     echo "<h4 style='text-align: center;'>Data Berhasil Dihapus</h4>";
     echo "<h1 style='text-align: center;'>Daftar Anggota DPR Republik Indonesia</h1>";
-    echo '<table id = "tabel">';
+    echo "<table id = 'tabel'>";
         echo "<tr>";
         echo "<th>ID</th>";
         echo "<th>Nama</th>";
