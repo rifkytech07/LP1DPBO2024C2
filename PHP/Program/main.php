@@ -10,13 +10,14 @@ require('Anggota.php'); //import file
 //hubungkan dengan file style.css.
 echo '<link rel="stylesheet" href="style.css">';
 
-//array
-$daftar = array();
 
 //Menambahkan data
  $dpr1 = new Anggota('111', 'RIfky', 'IT', 'PKS', 'Foto Profil/PP1.jpg');
  $dpr2 = new Anggota('112', 'Caca', 'Pendidikan', 'PKB', 'Foto Profil/PP2.jpg');
  $dpr3 = new Anggota('113', 'Layla', 'Ekonomi', 'Nasdem', 'Foto Profil/PP3.png');
+
+//array
+$daftar = array();
  
 //setelah itu, masukkan ke dalam list
  array_push($daftar, $dpr1);
