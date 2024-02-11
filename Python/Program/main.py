@@ -2,7 +2,7 @@
 ## Desain Pemorograman Berbasis Objek untuk keberkahanNya maka saya tidak 
 ## melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
-
+# import file
 from Anggota import Anggota
 
 # deklarasi array
