@@ -11,7 +11,7 @@ require('Anggota.php'); //import file
 echo '<link rel="stylesheet" href="style.css">';
 
 //array
-$daftar = array();;
+$daftar = array();
 
 //Menambahkan data
  $dpr1 = new Anggota('111', 'RIfky', 'IT', 'PKS', 'Foto Profil/PP1.jpg');
