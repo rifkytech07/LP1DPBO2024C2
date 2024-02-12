@@ -7,9 +7,6 @@
 <?php
 require('Anggota.php'); //import file
 
-
-
-
 //Menambahkan data
  $dpr1 = new Anggota('111', 'RIfky', 'IT', 'PKS', 'Foto Profil/PP1.jpg');
  $dpr2 = new Anggota('112', 'Caca', 'Pendidikan', 'PKB', 'Foto Profil/PP2.jpg');
